@@ -38,7 +38,8 @@ http://themeforest.net/licenses
 		<!-- Main CSS files -->
         <link rel="stylesheet" href="./css/main.css">
         <link rel="stylesheet" href="./css/main_responsive.css">
-        <link rel="stylesheet" href="./css/style-font1.css">
+<!--        <link rel="stylesheet" href="./css/style-font1.css">-->
+        <link rel="stylesheet" href="./css/style-color1.css">
         
         <script src="./js/vendor/modernizr-2.7.1.min.js"></script>
     </head>
@@ -60,51 +61,54 @@ http://themeforest.net/licenses
         </div>
         
         <!-- BEGIN OF site header Menu -->
-		<!-- Add "material" class for a material design style -->
+		<!-- Add material class fr a material design style -->
 		<header class="header-top">
 <!--		<header class="header-top material">-->
 			<div class="logo">
 				<a href="#home">
-					<img src="img/logo_large.png" alt="Logo Brand">
+					<img src="img/logodark_large.png" alt="Logo Brand">
 				</a>
 			</div>
             <div class="menu clearfix">
                 <a href="#about-us">about</a>
-				<!-- Add other menu similar to "about" here -->
                 <a href="#contact">contact</a>
             </div>
+			<!-- Add other menu similar to "about" here -->
+            <!--<div class="menu" data-menuanchor="about">
+                <a href="#contact">contact</a>
+            </div> -->
 		</header>
         <!-- END OF site header Menu-->
         
         <!-- BEGIN OF Quick nav icons at left -->
 		<nav class="quick-link count-6 nav-left">
-			<ul id="qmenu">
-				<li data-menuanchor="home">
+			<ul class="">
+				<li>
 					<a href="#home" class=""><i class="icon ion ion-home"></i>
 					</a>
 					<span class="title">Home page</span>
 				</li>
-				<li data-menuanchor="when">
+				<li>
 					<a href="#when" class=""><i class="icon ion ion-android-alarm"></i>
 					</a>
 					<span class="title">When</span>
 				</li>
-				<li data-menuanchor="register">
+				<li>
 					<a href="#register"><i class="icon ion ion-compose"></i>
 					</a>
 					<span class="title">Stay in touch</span>
 				</li>
-				<li data-menuanchor="about-us">
+				<li>
 					<a href="#about-us"><i class="icon ion ion-android-information"></i>
 					</a>
 					<span class="title">About Us</span>
 				</li>
-				<li data-menuanchor="contact">
+				<li>
 					<a href="#contact"><i class="icon ion ion-android-call"></i>
 					</a>
 					<span class="title">Contact</span>
 				</li>
-				<li data-menuanchor="contact">
+				<li>
 					<a href="#contact/message"><i class="icon ion ion-email"></i>
 					</a>
 					<span class="title">Write to us</span>
@@ -121,12 +125,12 @@ http://themeforest.net/licenses
             <div class="cover-bg pos-abs full-size bg-img" data-image-src="img/bg-default.jpg"></div>
 			
             <!-- BEGIN OF Slideshow Background -->
-            <div class="cover-bg pos-abs full-size slide-show">
+            <!--<div class="cover-bg pos-abs full-size slide-show">
 				<i class='img' data-src='./img/bg-slide1.jpg'></i>
 				<i class='img' data-src='./img/bg-slide2.jpg'></i>
 				<i class='img' data-src='./img/bg-slide3.jpg'></i>
 				<i class='img' data-src='./img/bg-slide4.jpg'></i>
-			</div>
+			</div>-->
             <!-- END OF Slideshow Background -->
             
             <!--BEGIN OF Static video bg  - uncomment below to use Video as Background-->
@@ -139,7 +143,7 @@ http://themeforest.net/licenses
             <!--END OF Static video bg-->
 			
 			<!-- Solid color as filter or as background -->
-            <div class="cover-bg pos-abs full-size bg-color" data-bgcolor="rgba(51, 2, 48, 0.12)"></div>
+            <div class="cover-bg pos-abs full-size bg-color" data-bgcolor="#F9F9F9"></div>
             
         </div>
         <!--END OF site Cover -->
@@ -151,7 +155,7 @@ http://themeforest.net/licenses
 			<div class="section page-home page page-cent" id="s-home">
 				<!-- Logo -->
 				<div class="logo-container">
-					<img class="h-logo" src="img/logo_only.png" alt="Logo">
+					<img class="h-logo" src="img/logodark_only.png" alt="Logo">
 				</div>
 				<!-- Content -->
 				<section class="content">
@@ -181,7 +185,7 @@ http://themeforest.net/licenses
 			<!-- End of home page -->
             
             <!-- Begin of timer page -->
-            <div class="section page-when page page-cent" id="s-when">
+            <div class="section page-when page page-cent bg-color" data-bgcolor="#ffffff" id="s-when">
                 <section class="content">
                     <div class="clock clock-countdown">
 						<div class="site-config"
@@ -199,7 +203,7 @@ http://themeforest.net/licenses
 							<!-- Optional text at top or image logo -->
 							<!--<span class="text top">here in</span>-->
 							<!-- Optional logo at top -->
-							<span class="text top"><img class="img" alt="Logo" src="img/logo_large.png"></span>
+							<span class="text top"><img class="img" alt="Logo" src="img/logodark_large.png"></span>
                             <div class="digit days">000</div>
                             <div class="text">days</div>
                         </div>
@@ -215,7 +219,7 @@ http://themeforest.net/licenses
 								  	data-width="400"
 								  	data-height="400"
 								 data-displayInput=false
-									data-fgColor="#fff"
+									data-fgColor="#555555"
 									data-bgColor="rgba(255,255,255,0)"
 									data-thickness=".07"
 								 	value="0"
@@ -239,7 +243,7 @@ http://themeforest.net/licenses
             <!-- End of timer page -->
             
             <!-- Begin of register page -->
-            <div class="section page-register page page-cent " id="s-register">
+            <div class="section page-register page page-cent   bg-color" data-bgcolor="#f1F1F1"  id="s-register">
                 <section class="content">
                     <header class="p-title">
                         <h3>Register <i class="ion ion-compose"></i></h3> 
@@ -273,7 +277,7 @@ http://themeforest.net/licenses
             <!-- End of register page -->
             
             <!-- Begin of about us page -->
-            <div class="section page-about page page-cent" id="s-about-us">
+            <div class="section page-about page page-cent bg-color" data-bgcolor="#eceff1" id="s-about-us">
                 <section class="content">
                     <header class="p-title">
                         <h3>About Us<i class="ion ion-android-information">
@@ -289,9 +293,9 @@ http://themeforest.net/licenses
                 <footer class="p-footer p-scrolldown">
                     <a href="#contact">
                         <div class="arrow-d">
+							<div class="circle"></div>
 							<div class="before">Contact</div>
 							<div class="after">Message</div>
-							<div class="circle"></div>
 						</div>
                     </a>                        
                 </footer>
@@ -299,7 +303,7 @@ http://themeforest.net/licenses
             <!-- End of about us page -->
                 
             <!-- Begin of Contact page   -->
-            <div class="section page-contact page page-cent  bg-color" data-bgcolor="rgba(95, 25, 208, 0.88)s" id="s-contact">
+            <div class="section page-contact page page-cent  bg-color" data-bgcolor="#ffffff" id="s-contact">
 				<!-- Begin of contact information -->
 				<div class="slide" id="information" data-anchor="information">
 					<section class="content">
@@ -360,7 +364,7 @@ http://themeforest.net/licenses
 											<!-- End of Social links -->
 										</li>
 										<li>
-											<p><img src="img/logo_large.png" alt="Logo" class="logo"></p>
+											<p><img src="img/logodark_large.png" alt="Logo" class="logo"></p>
 											<p class="small">Bientot by <strong><a href="http://highhay.com">Brand</a></strong>. All right reserved 2015</p>
 										</li>
 									</ul>
@@ -377,7 +381,7 @@ http://themeforest.net/licenses
 				<div class="slide" id="message" data-anchor="message">
 					<section class="content">
 						<header class="p-title">
-							<h3>Write to us<i class="ion ion-email">
+							<h3>Message<i class="ion ion-email">
 								</i>
 							</h3>
 							<ul class="buttons">
