@@ -1199,10 +1199,10 @@ strong,
 
 .page .content .clock .header{
 	position: absolute;
-	top: -72px;
-    font-family: 'Asap';
-	font-weight: normal;
-	font-size: 30px;
+	top: -62px;
+	font-weight: bold;
+	font-family: 'Asap';
+	font-size: 36px;
 	text-align: center;
 	width: 100%;
 }
@@ -1234,7 +1234,7 @@ strong,
 .page .clock .elem-center .digit{
     position: relative; 
     font-size: 120px;
-	margin-top: -0.5em;
+	margin-top: -1.2em;
 	letter-spacing: -0.03em;
 	line-height: 1em;
     font-family: 'Asap';
@@ -1245,7 +1245,7 @@ strong,
 }
 .page .clock .elem-center .text{
 	position: absolute;
-	bottom: 58%;
+	bottom: 100%;
 	font-size: 24px;
 	margin-top: 0;
 }
@@ -1257,6 +1257,7 @@ strong,
 	margin-bottom: 20px;
 }
 .page .clock .elem-right,
+.page .clock .elem-left2,
 .page .clock .elem-left{
 	position: absolute;
 	width: 70px;
@@ -1265,12 +1266,16 @@ strong,
 	display: block;
 }
 .page .clock .elem-left{
-	left: 50px;
+	left: 60px;
+}
+.page .clock .elem-left2{
+      	left: 180px;
 }
 .page .clock .elem-right{
-	right: 50px;
+	right: 60px;
 }
 .page .clock .elem-right .text,
+.page .clock .elem-left2 .text,
 .page .clock .elem-left .text{
 	position: absolute;
 	bottom: 58%;
@@ -1278,12 +1283,13 @@ strong,
 	margin-top: 0;
 }
 .page .clock .elem-right .digit,
+.page .clock .elem-left2 .digit,
 .page .clock .elem-left .digit{
     position: relative; 
 	text-align: center;
     font-size: 60px;
 	letter-spacing: -0.03em;
-	margin-top: -0.5em;
+	margin-top: 0.08em;
 	line-height: 1em;
     font-family: 'Asap';
 	font-weight: normal;
