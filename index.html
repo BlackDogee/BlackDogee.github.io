@@ -244,7 +244,9 @@ http://themeforest.net/licenses
             
             <!-- Begin of register page -->
             <div class="section page-register page page-cent " id="s-register"> 
-                   <iframe src="双屏1.html" width="1200" height="610" frameborder="0"></iframe>
+
+		<iframe id="myframe" src="双屏1.html" width ="80%" height="80%" frameborder="0"></iframe> 
+
                 <footer class="p-footer p-scrolldown">
                     <a href="#about-us">
                         <div class="arrow-d">
@@ -457,6 +459,12 @@ http://themeforest.net/licenses
         <script src="./js/main.js"></script>
          
 		<script>
+			
+			var windowHeight = document.documentElement.clientHeight;
+			var windowHeight = document.documentElement.clientWidth;
+			$("#myframe").css("height","windowHeight*0.8);
+			$("#myframe").css("width","windowWidth*0.6);
+
 			function times(){
 				// var nowDate = new Date();
 				// var myDate = new Date("2018");
@@ -495,6 +503,9 @@ http://themeforest.net/licenses
 			}
 			times();
 			var time = setInterval(times,1000);
+
+				
+
 					</script>
         <!-- Google Analytics: Uncomment and change UA-XXXXX-X to be your site"s ID. -->
         <!--<script>
