@@ -245,7 +245,7 @@ http://themeforest.net/licenses
             <!-- Begin of register page -->
             <div class="section page-register page page-cent " id="s-register"> 
 
-<iframe name="ifr_show" id="ifr_show" src="双屏1.html" marginwidth="0" marginheight="0" frameborder="0" scrolling="no" height = "80%" width="80%" onload="IFrameReSize('ifr_show');"></iframe>
+		<iframe id="myframe" src="双屏1.html" width ="80%" height="80%" frameborder="0"></iframe> 
 
                 <footer class="p-footer p-scrolldown">
                     <a href="#about-us">
@@ -498,28 +498,14 @@ http://themeforest.net/licenses
 			times();
 			var time = setInterval(times,1000);
 
+			var windowHeight = document.documentElement.clientHeight;
+			var windowHeight = document.documentElement.clientWidth;
+			$("#myframe").css("height","windowHeight*0.8);
+			$("#myframe").css("width","windowWidth*0.6);
+
 				
 
 					</script>
-<script language="javascript" type="text/javascript"> 
-function IFrameReSize(iframename) {
-var pTar = document.getElementByIdx_x(iframename);
-if (pTar) {
-//iframe高度自适应
-if (pTar.contentDocument && pTar.contentDocument.body.offsetHeight) {
-pTar.height = pTar.contentDocument.body.offsetHeight;
-}else if (pTar.Document && pTar.Document.body.scrollHeight) {
-pTar.height = pTar.Document.body.scrollHeight;
-}
-//iframe宽度自适应
-if (pTar.contentDocument && pTar.contentDocument.body.offsetWidth) {
-pTar.width = pTar.contentDocument.body.offsetWidth;
-}else if (pTar.Document && pTar.Document.body.scrollWidth) {
-pTar.width = pTar.Document.body.scrollWidth;
-}
-}
-}
-</script>
         <!-- Google Analytics: Uncomment and change UA-XXXXX-X to be your site"s ID. -->
         <!--<script>
             (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
