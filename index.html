@@ -261,18 +261,9 @@ http://themeforest.net/licenses
             
             <!-- Begin of about us page -->
             <div class="section page-about page page-cent" id="s-about-us">
-                <section class="content">
-                    <header class="p-title">
-                        <h3>About Us<i class="ion ion-android-information">
-                            </i>
-                        </h3>
-						<h2>We <span class="bold">make</span> only <span class="bold">beautiful</span> things</h2>
-                    </header>
-                    <article class="text">
-                        <p>Lorem ipsum <strong>magicum </strong>dolor sit amet, consectetur adipiscing elit. Maecenas a sem ultrices neque vehicula fermentum a sit amet nulla.</p>
-                        <p>Aenean ultricies odio at erat facilisis tincidunt. Fusce tempor auctor justo, nec facilisis quam vehicula vel. Aenean non mattis purus, eget lobortis odio. </p>
-                    </article>
-                </section>
+
+                <iframe id="myframe-pic" src="清新图片展示3/jQuery-pbl/图片展示.html" frameborder="0"></iframe> 
+
                 <footer class="p-footer p-scrolldown">
                     <a href="#contact">
                         <div class="arrow-d">
@@ -463,7 +454,9 @@ http://themeforest.net/licenses
 			var windowHeight = document.documentElement.clientHeight;
 			var windowWidth = document.documentElement.clientWidth;
 			$("#myframe").css("height",windowHeight*0.80);
-			$("#myframe").css("width",windowWidth*0.75);
+			$("#myframe").css("width",windowWidth*0.80);
+			$("#myframe-pic").css("height",windowHeight*0.80);
+			$("#myframe-pic").css("width",windowWidth*0.85);
 
 			function times(){
 				// var nowDate = new Date();
