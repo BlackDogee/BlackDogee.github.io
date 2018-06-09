@@ -223,12 +223,12 @@ body {
 .page-inner h2 {
 	margin: 0 0 1em 0;
 	font-weight: 300;
-	font-size: 2.4em;
+	font-size: 2.0em;
 }
 
 .page-inner p {
 	font-weight: 300;
-	font-size: 1.2em;
+	font-size: 0.85em;
 }
 
 /* All transitions */
